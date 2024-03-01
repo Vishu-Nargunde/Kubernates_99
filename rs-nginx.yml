@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+q2apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: myonlineapp-rs
@@ -10,7 +10,7 @@ spec:
    template:                                     
      metadata:
        labels:
-          app: myonlineapp    # change to myonlineapp once and webserver once
+          app: webserver    # change to myonlineapp once and webserver once
      spec:
         containers:
         - name: myonlineapp-container
