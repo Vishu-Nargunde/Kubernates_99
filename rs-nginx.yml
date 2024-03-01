@@ -1,4 +1,4 @@
-q2apiVersion: apps/v1
+apiVersion: v1
 kind: ReplicaSet
 metadata:
   name: myonlineapp-rs
