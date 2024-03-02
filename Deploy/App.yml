@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vertex-deploy
+  labels:
+     app: myvertexapp
+     version: 2.6.1
+spec:
+  replicas: 4
+  selector:
+      matchLabels:
+        app: myvertexapp
+        version: 2.6.1
+  template:
+     metadata:
+       labels:
+           app: myvertexapp
+           version: 2.6.1
+     spec:
+       containers:
+       - name: myjavaapp-container
+         image:  nbktechnosys/myjavaimages2dec22:1
+         ports:
+         - containerPort: 8080
