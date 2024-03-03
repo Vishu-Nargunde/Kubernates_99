@@ -10,7 +10,7 @@ spec:
       template:
         spec:
           containers:
-          - name: hello
+          - name: my-job
             image: busybox
             args:
             - /bin/sh
