@@ -1,7 +1,7 @@
 apiVersion: batch/v1 #batch/v1beta1 --> v1.21
 kind: CronJob
 metadata:
-  name: hello
+  name: my-job
 spec:
   successfulJobsHistoryLimit: 5
   schedule: "*/2 * * * *" # Mintues (0-59) Hours (0-23 ) DOM(1-31) Month (1-12) DOW (1-6)
