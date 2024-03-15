@@ -9,9 +9,4 @@ spec:
   resources:
      requests:
        storage: 4Gi
-  selector:
-      app: myvertexapp
-  ports:
-    - port: 80
-      targetPort: 80
-  type: LoadBalancer
+  
