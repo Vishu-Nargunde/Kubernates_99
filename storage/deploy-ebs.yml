@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        app: myvertexap
+        app: myvertexapp
     spec:
       volumes:
        - name: shared-date-logs  # Crea
