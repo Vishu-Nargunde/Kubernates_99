@@ -8,10 +8,3 @@ parameters:
   csi.storage.k8s.io/fstype: ext4
   type: gp3
   iopsPerGB: "50"
-spec:
-  selector:
-      app: myvertexapp
-  ports:
-    - port: 80
-      targetPort: 80
-  type: LoadBalancer
